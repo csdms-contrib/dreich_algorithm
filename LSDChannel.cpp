@@ -772,7 +772,7 @@ int LSDChannel::calculate_channel_heads(int min_seg_length_for_channel_heads, fl
     // Looping through the combinations of hillslope and channel segment lengths
 	  for (int hill_seg_length = min_seg_length_for_channel_heads; hill_seg_length <= end_node-min_seg_length_for_channel_heads; hill_seg_length++)
     {
-		  int chan_seg_length = end_node - hill_seg_length+1;
+		  int chan_seg_length = end_node - hill_seg_length;
 
 		  //cout << endl;
 		  //cout << "Size of channel: " << Chi.size() << endl;
